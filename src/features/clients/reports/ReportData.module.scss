@@ -1,0 +1,46 @@
+@import "../../../colors";
+
+.reportData {
+  border-top: 1px solid $primary-border;
+  padding: 15px;
+  position: relative;
+
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .headerText {
+    margin-right: auto;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .info {
+    border: 2px solid $info;
+    border-radius: 5px;
+    padding: 15px;
+    color: $info;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .dataEntry {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: 15px 15px 0 0;
+
+    .remove {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}

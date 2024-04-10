@@ -1,0 +1,20 @@
+@import "../../colors";
+
+.info {
+  display: flex;
+  align-items: center;
+  border: 2px solid $info;
+  border-radius: 5px;
+  background-color: $info;
+  color: $primary-text;
+  width: 100%;
+
+  .icon {
+    color: $primary-text;
+    padding: 15px 0 15px 15px;
+  }
+
+  .text {
+    padding: 15px;
+  }
+}

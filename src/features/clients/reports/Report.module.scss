@@ -1,0 +1,37 @@
+@import "../../../colors";
+
+.report {
+  border: 2px solid $primary-border;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 15px;
+  position: relative;
+
+  .header {
+    display: flex;
+    padding: 15px;
+    background-color: $header-background;
+  }
+
+  .expand {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .name {
+    margin-left: 15px;
+    font-weight: bold;
+  }
+
+  .remove {
+    cursor: pointer;
+    margin-left: auto;
+
+    &.disabled {
+      color: $button-disabled;
+      pointer-events: none;
+    }
+  }
+}
