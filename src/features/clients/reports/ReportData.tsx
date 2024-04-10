@@ -43,7 +43,7 @@ export const ReportData = ({
   reportId,
   reportName
 }: { reportId: string, reportName: string }) => {
-  const { data: reportData = [], isError, isLoading: isLoadingReportData } = useGetReportDataByReportIdQuery(reportId);
+  const { data: reportData = [], isLoading: isLoadingReportData } = useGetReportDataByReportIdQuery(reportId);
   const [addReportData, { isLoading: isAddingReportData}] = useAddReportDataMutation();
 
   const handleAddData = async () => {
